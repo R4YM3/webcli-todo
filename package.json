@@ -2,12 +2,11 @@
     "name": "web-cli-todo",
     "version": "0.1.0",
     "description": "todo program for webcli-interpreter",
+    "module": true,
     "files": [
         "lib/**/*"
     ],
     "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "type": "module",
     "scripts": {
         "test": "jest --config jestconfig.json",
         "build": "tsc",
@@ -29,6 +28,9 @@
         "url": "https://github.com/R4YM3/web-cli-todo/issues"
     },
     "homepage": "https://github.com/R4YM3/web-cli-todo#readme",
+    "dependencies": {
+        "web-cli-interpreter": "^0.1.0"
+    },
     "devDependencies": {
         "@types/jest": "26.0.23",
         "jest": "27.0.5",
