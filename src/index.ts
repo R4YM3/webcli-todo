@@ -1,12 +1,12 @@
 import { Program, ICommand } from "web-cli-interpreter";
 
-const version = "1.0.0";
+export const VERSION = "1.0.0";
 
 export const Todo = new Program({
     indentifier: {
         name: "todo",
     },
-    version,
+    version: VERSION,
     description: "Create and manage to-dos",
     methods: [
         {
@@ -17,7 +17,7 @@ export const Todo = new Program({
             description: "current installed version",
             execute(command: ICommand) {
                 return Promise.resolve(`
-                        v${version}
+                        v${VERSION}
                     `);
             },
         },
