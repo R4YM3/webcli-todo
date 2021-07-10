@@ -1,5 +1,5 @@
 {
-    "name": "web-cli-todo",
+    "name": "webcli-todo",
     "version": "0.1.0-alpha.0",
     "description": "todo program for webcli-interpreter",
     "files": [
